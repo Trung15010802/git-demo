@@ -22,7 +22,7 @@
 
     Ví dụ, nếu bạn không muốn Git theo dõi các tệp tin .log, bạn có thể tạo một file .gitignore với nội dung " *.log " trong thư mục gốc của kho chứa. Khi đó, Git sẽ bỏ qua tất cả các tệp tin có đuôi .log khi thực hiện các hoạt động như commit, push hay pull.
 
-5. git add
+4. git add
     Lệnh "git add" được sử dụng trong Git để thêm các tệp tin hoặc thư mục vào vùng lưu trữ tạm thời của Git, gọi là staging area hoặc index.
 
     Khi bạn thực hiện lệnh "git add", Git sẽ xác định các thay đổi được thực hiện trên các tệp tin đã được theo dõi và chuẩn bị chúng để được commit trong commit tiếp theo. Vùng staging area là một vùng trung gian giữa thư mục làm việc và kho chứa Git, và nó cho phép bạn kiểm soát các thay đổi trước khi đưa chúng vào kho chứa.
@@ -34,7 +34,7 @@
     "git add <directory-name>" : thêm một thư mục cụ thể và tất cả các tệp tin và thư mục con của nó vào staging area.
     Sau khi đã thêm các tệp tin hoặc thư mục vào staging area, bạn có thể thực hiện lệnh "git commit" để đưa chúng vào kho chứa Git.
 
-6. git reset
+5. git reset
 
     Lệnh "git reset" trong Git được sử dụng để xóa các thay đổi đã được staging và trở về trạng thái trước khi staging hoặc để quay lại các commit trước đó.
 
@@ -48,7 +48,7 @@
 
     Lệnh "git reset" có thể được sử dụng để xóa các thay đổi đã được staging và trở về trạng thái trước đó hoặc để quay lại các commit trước đó, nhưng bạn nên sử dụng nó cẩn thận vì nó có thể làm mất các thay đổi và commit quan trọng của bạn.
 
-7. git commit
+6. git commit
 
     Lệnh "git commit" trong Git được sử dụng để tạo ra một phiên bản mới của các thay đổi trong kho lưu trữ của Git. Khi bạn sử dụng lệnh "git commit", Git sẽ lưu trữ các thay đổi trong kho lưu trữ của bạn với một tin nhắn mô tả các thay đổi đó. Việc commit thường được sử dụng sau khi bạn đã thêm các tệp tin hoặc thư mục vào vùng staging area bằng lệnh "git add".
 
@@ -61,7 +61,7 @@
     
     Lệnh "git commit -a" trong Git được sử dụng để tạo một commit mới với tất cả các thay đổi đã được lưu trữ trong kho lưu trữ của Git mà không cần sử dụng lệnh "git add" để thêm chúng vào vùng staging area trước đó.
 
-8. git remote
+7. git remote
     Lệnh "git remote" trong Git được sử dụng để quản lý các kết nối với các kho lưu trữ từ xa (remote repositories). Khi bạn làm việc với Git, thường bạn sẽ phải làm việc với một hoặc nhiều kho lưu trữ từ xa để đồng bộ hóa thay đổi và chia sẻ mã nguồn với các thành viên khác trong nhóm.
 
     Các tùy chọn thông dụng của lệnh "git remote" bao gồm:
@@ -76,7 +76,7 @@
 
     Lệnh "git remote" là một trong những lệnh quan trọng trong Git để quản lý các kết nối với các kho lưu trữ từ xa, giúp bạn dễ dàng đồng bộ hóa và chia sẻ mã nguồn trong các dự án phần mềm phức tạp.
 
-9. git push
+8. git push
     Lệnh "git push" trong Git được sử dụng để đẩy các thay đổi từ kho lưu trữ của bạn lên một kho lưu trữ từ xa (remote repository). Khi bạn đã thực hiện các thay đổi trên nhánh cục bộ (local branch) của mình, bạn cần phải đẩy chúng lên kho lưu trữ từ xa để đồng bộ hóa và chia sẻ mã nguồn với các thành viên khác trong nhóm.
 
     Các tùy chọn thông dụng của lệnh "git push" bao gồm:
@@ -90,7 +90,7 @@
     Lệnh "git push" là một trong những lệnh cơ bản nhất trong Git để đẩy các thay đổi từ nhánh cục bộ của bạn lên kho lưu trữ từ xa và đồng bộ hóa và chia sẻ mã nguồn với các thành viên khác trong nhóm.
 
 
-10. git fetch
+9. git fetch
     Lệnh "git fetch" trong Git được sử dụng để tải các thay đổi từ kho lưu trữ từ xa (remote repository) vào kho lưu trữ cục bộ của bạn, mà không hợp nhất (merge) các thay đổi này vào nhánh hiện tại của bạn.
 
     Khi bạn chạy lệnh "git fetch", Git sẽ tải về toàn bộ lịch sử thay đổi từ kho lưu trữ từ xa, sau đó cập nhật các tham chiếu (references) trong kho lưu trữ cục bộ của bạn để phản ánh các thay đổi mới nhất trên các nhánh từ xa. Tuy nhiên, các thay đổi này sẽ không được hợp nhất vào nhánh hiện tại của bạn.
@@ -105,7 +105,7 @@
 
     Lệnh "git fetch" là một trong những lệnh cơ bản nhất trong Git để tải các thay đổi từ kho lưu trữ từ xa vào kho lưu trữ cục bộ của bạn và cập nhật các tham chiếu phù hợp.
 
-11. git merge
+10. git merge
     Lệnh "git merge" trong Git được sử dụng để hợp nhất các thay đổi giữa hai nhánh khác nhau. Khi bạn làm việc trên một dự án với nhiều nhánh, bạn có thể muốn hợp nhất các thay đổi từ các nhánh khác nhau vào nhánh hiện tại của mình để đồng bộ hóa và cập nhật các thay đổi mới nhất trong dự án.
 
     Các tùy chọn thông dụng của lệnh "git merge" bao gồm:
