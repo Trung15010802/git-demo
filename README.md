@@ -75,3 +75,15 @@
 
     Lệnh "git remote" là một trong những lệnh quan trọng trong Git để quản lý các kết nối với các kho lưu trữ từ xa, giúp bạn dễ dàng đồng bộ hóa và chia sẻ mã nguồn trong các dự án phần mềm phức tạp.
 
+9. git push
+    Lệnh "git push" trong Git được sử dụng để đẩy các thay đổi từ kho lưu trữ của bạn lên một kho lưu trữ từ xa (remote repository). Khi bạn đã thực hiện các thay đổi trên nhánh cục bộ (local branch) của mình, bạn cần phải đẩy chúng lên kho lưu trữ từ xa để đồng bộ hóa và chia sẻ mã nguồn với các thành viên khác trong nhóm.
+
+    Các tùy chọn thông dụng của lệnh "git push" bao gồm:
+
+        "git push origin [tên_nhánh]": Đẩy các thay đổi từ nhánh cục bộ của bạn lên kho lưu trữ từ xa với tên "origin" (thường là kho lưu trữ mặc định khi bạn sử dụng lệnh "git clone"). Ví dụ: "git push origin main"
+
+        "git push -u origin [tên_nhánh]": Đẩy các thay đổi từ nhánh cục bộ của bạn lên kho lưu trữ từ xa và đăng ký nhánh của bạn với tên "origin". Khi đăng ký, bạn có thể sử dụng lệnh "git pull" để kéo các thay đổi mới nhất từ kho lưu trữ từ xa trên nhánh đó.
+
+        "git push --tags": Đẩy tất cả các tags (nhãn) cục bộ của bạn lên kho lưu trữ từ xa.
+
+    Lệnh "git push" là một trong những lệnh cơ bản nhất trong Git để đẩy các thay đổi từ nhánh cục bộ của bạn lên kho lưu trữ từ xa và đồng bộ hóa và chia sẻ mã nguồn với các thành viên khác trong nhóm.
