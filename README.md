@@ -88,3 +88,32 @@
         "git push --tags": Đẩy tất cả các tags (nhãn) cục bộ của bạn lên kho lưu trữ từ xa.
 
     Lệnh "git push" là một trong những lệnh cơ bản nhất trong Git để đẩy các thay đổi từ nhánh cục bộ của bạn lên kho lưu trữ từ xa và đồng bộ hóa và chia sẻ mã nguồn với các thành viên khác trong nhóm.
+
+
+10. git fetch
+    Lệnh "git fetch" trong Git được sử dụng để tải các thay đổi từ kho lưu trữ từ xa (remote repository) vào kho lưu trữ cục bộ của bạn, mà không hợp nhất (merge) các thay đổi này vào nhánh hiện tại của bạn.
+
+    Khi bạn chạy lệnh "git fetch", Git sẽ tải về toàn bộ lịch sử thay đổi từ kho lưu trữ từ xa, sau đó cập nhật các tham chiếu (references) trong kho lưu trữ cục bộ của bạn để phản ánh các thay đổi mới nhất trên các nhánh từ xa. Tuy nhiên, các thay đổi này sẽ không được hợp nhất vào nhánh hiện tại của bạn.
+
+    Một số tùy chọn thông dụng của lệnh "git fetch" bao gồm:
+
+        "git fetch [remote_name]": Tải các thay đổi từ kho lưu trữ từ xa với tên "remote_name" vào kho lưu trữ cục bộ của bạn.
+
+        "git fetch --all": Tải các thay đổi từ tất cả các kho lưu trữ từ xa vào kho lưu trữ cục bộ của bạn.
+
+        "git fetch --prune": Xóa bỏ các tham chiếu của các nhánh từ xa đã bị xóa khỏi kho lưu trữ từ xa. Tùy chọn này sẽ đảm bảo rằng kho lưu trữ cục bộ của bạn được cập nhật đầy đủ và không chứa bất kỳ tham chiếu nào đến các nhánh đã bị xóa từ kho lưu trữ từ xa.
+
+    Lệnh "git fetch" là một trong những lệnh cơ bản nhất trong Git để tải các thay đổi từ kho lưu trữ từ xa vào kho lưu trữ cục bộ của bạn và cập nhật các tham chiếu phù hợp.
+
+11. git merge
+    Lệnh "git merge" trong Git được sử dụng để hợp nhất các thay đổi giữa hai nhánh khác nhau. Khi bạn làm việc trên một dự án với nhiều nhánh, bạn có thể muốn hợp nhất các thay đổi từ các nhánh khác nhau vào nhánh hiện tại của mình để đồng bộ hóa và cập nhật các thay đổi mới nhất trong dự án.
+
+    Các tùy chọn thông dụng của lệnh "git merge" bao gồm:
+
+        "git merge [tên_nhánh]": Hợp nhất các thay đổi từ nhánh với tên "tên_nhánh" vào nhánh hiện tại của bạn. Khi bạn chạy lệnh này, Git sẽ tìm kiếm các thay đổi khác nhau giữa hai nhánh và cố gắng hợp nhất chúng vào nhánh hiện tại của bạn.
+
+        "git merge --no-ff [tên_nhánh]": Tạo ra một commit hợp nhất mới, thay vì chỉ thêm các thay đổi từ nhánh được hợp nhất vào nhánh hiện tại của bạn. Tùy chọn này được sử dụng để giữ lại lịch sử hợp nhất cho dự án của bạn.
+
+        "git merge --abort": Hủy bỏ quá trình hợp nhất đang diễn ra. Nếu bạn gặp vấn đề khi hợp nhất các thay đổi, bạn có thể sử dụng lệnh này để quay lại trạng thái trước khi hợp nhất.
+
+    Lệnh "git merge" là một trong những lệnh cơ bản nhất trong Git để hợp nhất các thay đổi từ các nhánh khác nhau và đồng bộ hóa dự án của bạn.
