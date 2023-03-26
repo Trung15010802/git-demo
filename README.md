@@ -57,3 +57,5 @@
     Ở đây, "Thêm tính năng A" là tin nhắn mô tả các thay đổi của bạn. Bạn có thể thay đổi tin nhắn này để mô tả chính xác các thay đổi bạn đã thực hiện.
 
     Lưu ý rằng khi bạn tạo một commit, Git sẽ tạo ra một số thông tin bổ sung như tên và địa chỉ email của người commit và thời gian commit. Bạn cũng có thể sử dụng các tùy chọn khác nhau với lệnh "git commit" để thực hiện các tác vụ như kiểm tra lại commit trước đó hoặc thay đổi tác giả của commit.
+    
+    Lệnh "git commit -a" trong Git được sử dụng để tạo một commit mới với tất cả các thay đổi đã được lưu trữ trong kho lưu trữ của Git mà không cần sử dụng lệnh "git add" để thêm chúng vào vùng staging area trước đó.
