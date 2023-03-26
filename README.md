@@ -59,3 +59,19 @@
     Lưu ý rằng khi bạn tạo một commit, Git sẽ tạo ra một số thông tin bổ sung như tên và địa chỉ email của người commit và thời gian commit. Bạn cũng có thể sử dụng các tùy chọn khác nhau với lệnh "git commit" để thực hiện các tác vụ như kiểm tra lại commit trước đó hoặc thay đổi tác giả của commit.
     
     Lệnh "git commit -a" trong Git được sử dụng để tạo một commit mới với tất cả các thay đổi đã được lưu trữ trong kho lưu trữ của Git mà không cần sử dụng lệnh "git add" để thêm chúng vào vùng staging area trước đó.
+
+8. git remote
+    Lệnh "git remote" trong Git được sử dụng để quản lý các kết nối với các kho lưu trữ từ xa (remote repositories). Khi bạn làm việc với Git, thường bạn sẽ phải làm việc với một hoặc nhiều kho lưu trữ từ xa để đồng bộ hóa thay đổi và chia sẻ mã nguồn với các thành viên khác trong nhóm.
+
+    Các tùy chọn thông dụng của lệnh "git remote" bao gồm:
+
+        "git remote add": Thêm một kho lưu trữ từ xa mới vào dự án của bạn. Ví dụ: "git remote add origin https://github.com/username/repo.git"
+
+        "git remote rm": Xóa một kho lưu trữ từ xa khỏi dự án của bạn. Ví dụ: "git remote rm origin"
+
+        "git remote -v": Liệt kê tất cả các kho lưu trữ từ xa đã được cấu hình trong dự án của bạn, bao gồm URL của chúng.
+
+        "git remote show [tên_kho]": Hiển thị thông tin chi tiết về một kho lưu trữ từ xa cụ thể, bao gồm các chi nhánh được đăng ký và trạng thái của các chi nhánh đó.
+
+    Lệnh "git remote" là một trong những lệnh quan trọng trong Git để quản lý các kết nối với các kho lưu trữ từ xa, giúp bạn dễ dàng đồng bộ hóa và chia sẻ mã nguồn trong các dự án phần mềm phức tạp.
+
