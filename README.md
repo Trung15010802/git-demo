@@ -1,4 +1,4 @@
-                                                                    MỘT VÀI CÂU LỆNH CƠ BẢN TRONG GIT
+                                             MỘT VÀI CÂU LỆNH CƠ BẢN TRONG GIT
 1. git int
     Lệnh "git init" được sử dụng để khởi tạo một kho chứa (repository) mới trong Git. Khi bạn chạy lệnh này, Git sẽ tạo ra một thư mục mới trong đó sẽ lưu trữ tất cả các tệp tin và thông tin về phiên bản của dự án của bạn.
 
