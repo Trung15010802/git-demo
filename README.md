@@ -151,7 +151,7 @@
 
     Sử dụng branch trong Git giúp các thành viên trong nhóm phát triển phần mềm có thể làm việc độc lập trên các tính năng khác nhau của dự án, đồng thời cũng giúp quản lý dự án và kiểm soát code được dễ dàng hơn.
 
-14 git branch
+14. git branch
     Lệnh git branch trong Git được sử dụng để liệt kê, tạo, xóa hoặc đổi tên các nhánh (branches) trong repository. Nó cung cấp cho người dùng khả năng quản lý nhiều nhánh khác nhau của repository để thực hiện các thay đổi, phát triển tính năng mới hoặc thử nghiệm mà không làm ảnh hưởng đến các phần khác của repository.
 
     Khi sử dụng lệnh git branch mà không có tham số, Git sẽ hiển thị danh sách tất cả các nhánh hiện có trong repository, trong đó có một nhánh đang được chọn để làm việc (được đánh dấu bằng ký tự *). Nếu bạn muốn tạo một nhánh mới, bạn có thể sử dụng lệnh git branch <tên_nhánh>.
@@ -159,3 +159,14 @@
     Ví dụ: để tạo một nhánh mới có tên là "feature-branch", bạn có thể sử dụng lệnh git branch feature-branch.
 
     Lệnh git branch còn có một số tùy chọn để thực hiện các thao tác nhánh khác như xóa nhánh (-d hoặc --delete), đổi tên nhánh (-m hoặc --move), tạo nhánh mới và chuyển đến nhánh đó (-b hoặc --create-and-checkout), và nhiều tùy chọn khác.
+
+15. git checkout
+    Lệnh git checkout trong Git được sử dụng để chuyển đổi giữa các branch và commit khác nhau. Cụ thể, lệnh này được sử dụng để:
+
+        Chuyển đổi giữa các branch: Khi bạn muốn chuyển đổi giữa các branch khác nhau trong repository của bạn, bạn có thể sử dụng lệnh git checkout để chuyển đổi giữa các branch đó.
+
+        Chuyển đổi giữa các commit: Ngoài chuyển đổi giữa các branch, lệnh git checkout cũng cho phép bạn chuyển đổi giữa các commit khác nhau. Khi đó, Git sẽ chuyển trạng thái của repository về trạng thái của commit đó.
+
+        Tạo một branch mới: Bạn có thể sử dụng lệnh git checkout -b <tên branch> để tạo một branch mới và chuyển sang branch đó ngay lập tức.
+
+        Bỏ các thay đổi không được theo dõi: Khi bạn thực hiện các thay đổi như thêm, sửa hoặc xóa các file trong thư mục làm việc của bạn và bạn muốn loại bỏ những thay đổi đó, bạn có thể sử dụng lệnh git checkout -- <tên file> hoặc git checkout . để bỏ các thay đổi đó. Lưu ý rằng tất cả các thay đổi chưa được commit sẽ bị mất.
