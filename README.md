@@ -185,3 +185,10 @@
     Trong đó, <commit> là commit mà bạn muốn di chuyển đến và các tùy chọn bao gồm --hard, --soft, và --mixed để xác định hành động cụ thể bạn muốn thực hiện.
 
     Chúng ta có thể sử dụng git reset để hoàn tác một commit, bằng cách di chuyển branch đến commit trước đó và bỏ qua commit hiện tại, hoặc khôi phục trạng thái trước khi commit. Lưu ý rằng việc sử dụng git reset có thể làm mất các thay đổi chưa được lưu lại và các commit bị xoá sẽ không thể khôi phục được, nên hãy sử dụng cẩn thận.
+
+17. git revert
+    Lệnh git revert trong Git được sử dụng để tạo một commit mới, với nội dung tương tự như một commit đã có trước đó, nhưng ngược lại với nó. Tức là, git revert sẽ tạo ra một commit mới để hoàn tác các thay đổi đã được thực hiện trong commit cũ, và giữ lại lịch sử của các commit trước đó.
+
+    Khi chạy lệnh git revert, Git sẽ yêu cầu bạn cung cấp mã xác định của commit mà bạn muốn hoàn tác. Sau đó, Git sẽ tạo ra một commit mới để áp dụng các thay đổi cần thiết để hoàn tác commit đó.
+
+    Vì git revert tạo ra một commit mới, nó có thể được sử dụng để hoàn tác các thay đổi trên các nhánh chia sẻ công khai mà đã được phát hành và không nên bị xoá đi.
