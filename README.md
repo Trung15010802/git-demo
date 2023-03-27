@@ -192,3 +192,8 @@
     Khi chạy lệnh git revert, Git sẽ yêu cầu bạn cung cấp mã xác định của commit mà bạn muốn hoàn tác. Sau đó, Git sẽ tạo ra một commit mới để áp dụng các thay đổi cần thiết để hoàn tác commit đó.
 
     Vì git revert tạo ra một commit mới, nó có thể được sử dụng để hoàn tác các thay đổi trên các nhánh chia sẻ công khai mà đã được phát hành và không nên bị xoá đi.
+
+18. git rebase 
+    Lệnh git rebase trong Git được sử dụng để thay đổi lịch sử commit của branch hiện tại dựa trên lịch sử commit của một branch khác, thường là master branch. Khi sử dụng lệnh này, Git sẽ thay đổi lịch sử commit của branch hiện tại bằng cách áp dụng các commit của branch khác lên branch hiện tại. Tương tự như git merge, git rebase cũng giúp kết hợp các thay đổi từ branch khác vào branch hiện tại, tuy nhiên, nó thực hiện việc này bằng cách xếp chồng các commit của branch khác lên đầu của branch hiện tại thay vì tạo một commit merge mới. Kết quả là lịch sử commit sẽ trở nên tuyệt vời hơn và dễ đọc hơn.
+
+    Tuy nhiên, nên cẩn thận khi sử dụng lệnh git rebase vì nó có thể làm thay đổi lịch sử commit, vì vậy hãy đảm bảo là bạn hiểu rõ các hậu quả của việc thực hiện lệnh này trước khi sử dụng nó.
