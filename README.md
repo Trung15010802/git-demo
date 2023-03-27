@@ -117,3 +117,19 @@
         "git merge --abort": Hủy bỏ quá trình hợp nhất đang diễn ra. Nếu bạn gặp vấn đề khi hợp nhất các thay đổi, bạn có thể sử dụng lệnh này để quay lại trạng thái trước khi hợp nhất.
 
     Lệnh "git merge" là một trong những lệnh cơ bản nhất trong Git để hợp nhất các thay đổi từ các nhánh khác nhau và đồng bộ hóa dự án của bạn.
+
+11. git pull
+    Lệnh "git pull" trong Git được sử dụng để tải các thay đổi từ kho lưu trữ từ xa và hợp nhất chúng vào nhánh hiện tại của bạn. Khi bạn chạy lệnh "git pull", Git sẽ tự động tải các thay đổi mới nhất từ kho lưu trữ từ xa và hợp nhất chúng vào nhánh hiện tại của bạn.
+
+    Lệnh "git pull" tương đương với việc chạy hai lệnh riêng biệt: "git fetch" để tải các thay đổi từ kho lưu trữ từ xa và "git merge" để hợp nhất các thay đổi này vào nhánh hiện tại của bạn.
+
+    Một số tùy chọn thông dụng của lệnh "git pull" bao gồm:
+
+        "git pull [remote_name] [branch_name]": Tải các thay đổi từ nhánh "branch_name" của kho lưu trữ từ xa có tên "remote_name" và hợp nhất chúng vào nhánh hiện tại của bạn.
+
+        "git pull --rebase": Tải các thay đổi từ kho lưu trữ từ xa và áp dụng lại các commit của bạn lên đầu của lịch sử thay đổi của kho lưu trữ từ xa, thay vì tạo một commit hợp nhất mới. Tùy chọn này có thể giúp giảm số lượng commit trong lịch sử của bạn và tạo ra một lịch sử thay đổi sạch hơn.
+
+        "git pull --no-rebase": Tải các thay đổi từ kho lưu trữ từ xa và tạo một commit hợp nhất mới thay vì áp dụng lại các commit của bạn. Tùy chọn này được sử dụng khi bạn muốn giữ lại lịch sử thay đổi của mình và không muốn sửa đổi nó.
+
+    Lệnh "git pull" là một trong những lệnh quan trọng trong Git để tải các thay đổi từ kho lưu trữ từ xa và hợp nhất chúng vào nhánh hiện tại của bạn một cách nhanh chóng và dễ dàng.
+
