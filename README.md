@@ -150,3 +150,12 @@
     Bạn có thể tạo một branch mới để phát triển tính năng mới, sửa lỗi hoặc chỉnh sửa các tính năng hiện có mà không ảnh hưởng đến branch chính. Sau khi bạn đã hoàn thành các thay đổi trên branch mới của mình, bạn có thể sử dụng các lệnh Git như merge hoặc rebase để hợp nhất những thay đổi của bạn vào branch chính hoặc branch khác.
 
     Sử dụng branch trong Git giúp các thành viên trong nhóm phát triển phần mềm có thể làm việc độc lập trên các tính năng khác nhau của dự án, đồng thời cũng giúp quản lý dự án và kiểm soát code được dễ dàng hơn.
+
+14 git branch
+    Lệnh git branch trong Git được sử dụng để liệt kê, tạo, xóa hoặc đổi tên các nhánh (branches) trong repository. Nó cung cấp cho người dùng khả năng quản lý nhiều nhánh khác nhau của repository để thực hiện các thay đổi, phát triển tính năng mới hoặc thử nghiệm mà không làm ảnh hưởng đến các phần khác của repository.
+
+    Khi sử dụng lệnh git branch mà không có tham số, Git sẽ hiển thị danh sách tất cả các nhánh hiện có trong repository, trong đó có một nhánh đang được chọn để làm việc (được đánh dấu bằng ký tự *). Nếu bạn muốn tạo một nhánh mới, bạn có thể sử dụng lệnh git branch <tên_nhánh>.
+
+    Ví dụ: để tạo một nhánh mới có tên là "feature-branch", bạn có thể sử dụng lệnh git branch feature-branch.
+
+    Lệnh git branch còn có một số tùy chọn để thực hiện các thao tác nhánh khác như xóa nhánh (-d hoặc --delete), đổi tên nhánh (-m hoặc --move), tạo nhánh mới và chuyển đến nhánh đó (-b hoặc --create-and-checkout), và nhiều tùy chọn khác.
