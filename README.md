@@ -170,3 +170,18 @@
         Tạo một branch mới: Bạn có thể sử dụng lệnh git checkout -b <tên branch> để tạo một branch mới và chuyển sang branch đó ngay lập tức.
 
         Bỏ các thay đổi không được theo dõi: Khi bạn thực hiện các thay đổi như thêm, sửa hoặc xóa các file trong thư mục làm việc của bạn và bạn muốn loại bỏ những thay đổi đó, bạn có thể sử dụng lệnh git checkout -- <tên file> hoặc git checkout . để bỏ các thay đổi đó. Lưu ý rằng tất cả các thay đổi chưa được commit sẽ bị mất.
+
+16. git reset
+    Lệnh git reset trong Git được sử dụng để thay đổi trạng thái của các commit trong repository. Nó có thể được sử dụng để:
+
+        Xóa các thay đổi chưa được commit.
+        Khôi phục các thay đổi đã commit trở lại trạng thái trước đó.
+        Di chuyển HEAD và branch đến một commit khác.
+        Unstage (bỏ khỏi staging area) các thay đổi đã thêm vào.
+    Cú pháp cơ bản của lệnh git reset là:
+    
+    git reset [options] [<commit>]
+
+    Trong đó, <commit> là commit mà bạn muốn di chuyển đến và các tùy chọn bao gồm --hard, --soft, và --mixed để xác định hành động cụ thể bạn muốn thực hiện.
+
+    Chúng ta có thể sử dụng git reset để hoàn tác một commit, bằng cách di chuyển branch đến commit trước đó và bỏ qua commit hiện tại, hoặc khôi phục trạng thái trước khi commit. Lưu ý rằng việc sử dụng git reset có thể làm mất các thay đổi chưa được lưu lại và các commit bị xoá sẽ không thể khôi phục được, nên hãy sử dụng cẩn thận.
