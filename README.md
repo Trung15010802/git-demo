@@ -133,3 +133,13 @@
 
     Lệnh "git pull" là một trong những lệnh quan trọng trong Git để tải các thay đổi từ kho lưu trữ từ xa và hợp nhất chúng vào nhánh hiện tại của bạn một cách nhanh chóng và dễ dàng.
 
+12. git clone
+    Lệnh git clone được sử dụng để sao chép một repository Git đã tồn tại từ remote repository vào máy tính của bạn. Khi sử dụng lệnh này, Git sẽ sao chép toàn bộ lịch sử commit, nhánh và tệp tin từ remote repository vào một thư mục trên máy tính của bạn.
+
+    Cú pháp của lệnh git clone là:
+
+    git clone <remote_repository_url>
+    Ví dụ, nếu bạn muốn sao chép repository có địa chỉ https://github.com/user/repo.git từ Github vào thư mục myrepo trên máy tính của bạn, bạn có thể sử dụng lệnh sau:
+
+    git clone https://github.com/user/repo.git myrepo
+    Lệnh này sẽ tạo một thư mục mới có tên myrepo và sao chép toàn bộ repository từ remote repository vào thư mục này. Sau khi sao chép xong, bạn có thể làm việc với repository này trên máy tính của bạn và commit các thay đổi của mình.
