@@ -143,3 +143,10 @@
 
     git clone https://github.com/user/repo.git myrepo
     Lệnh này sẽ tạo một thư mục mới có tên myrepo và sao chép toàn bộ repository từ remote repository vào thư mục này. Sau khi sao chép xong, bạn có thể làm việc với repository này trên máy tính của bạn và commit các thay đổi của mình.
+
+13. branch
+    Branch trong Git được sử dụng để phát triển và quản lý các tính năng, sửa lỗi và các dự án riêng tách biệt khác mà không ảnh hưởng đến các tính năng khác. Khi bạn tạo một branch mới, Git sẽ tạo ra một bản sao của repository hiện tại và cho phép bạn phát triển và thử nghiệm tính năng mới mà không ảnh hưởng đến branch chính.
+
+    Bạn có thể tạo một branch mới để phát triển tính năng mới, sửa lỗi hoặc chỉnh sửa các tính năng hiện có mà không ảnh hưởng đến branch chính. Sau khi bạn đã hoàn thành các thay đổi trên branch mới của mình, bạn có thể sử dụng các lệnh Git như merge hoặc rebase để hợp nhất những thay đổi của bạn vào branch chính hoặc branch khác.
+
+    Sử dụng branch trong Git giúp các thành viên trong nhóm phát triển phần mềm có thể làm việc độc lập trên các tính năng khác nhau của dự án, đồng thời cũng giúp quản lý dự án và kiểm soát code được dễ dàng hơn.
